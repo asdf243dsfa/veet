@@ -4,12 +4,12 @@ Enterprise-grade AI-powered multilingual video communications platform built wit
 
 ## Features
 
-- 🌐 **Multilingual Support**: Real-time AI translation across 11 languages
-- 🤖 **AI-Powered**: Built with OpenAI GPT-4o-mini for accurate translations
-- 🚀 **Enterprise-Ready**: Professional interface and branding
-- 📱 **Responsive Design**: Works seamlessly across all devices
-- ⚡ **Real-time**: WebRTC peer-to-peer video with WebSocket signaling
-- 🔒 **Secure**: End-to-end encrypted video communications
+- **Multilingual Support**: Real-time AI translation across 11 languages
+- **AI-Powered**: Built with OpenAI GPT-4o-mini for accurate translations
+- **Enterprise-Ready**: Professional interface and branding
+- **Responsive Design**: Works seamlessly across all devices
+- **Real-time**: WebRTC peer-to-peer video with WebSocket signaling
+- **Secure**: End-to-end encrypted video communications
 
 ## Video tutorials 
 
