@@ -1,6 +1,6 @@
 import { DurableObject } from 'cloudflare:workers';
 
-export class Veet extends DurableObject {
+export class Intellimeet extends DurableObject {
 	constructor(ctx, env) {
 		super(ctx, env);
 		this.storage = ctx.storage;
@@ -60,8 +60,8 @@ export default {
 		if (!upgrade || upgrade != 'websocket') {
 			return new Response('Expected upgrade to websocket', { status: 426 });
 		}
-		const id = env.VEET.idFromName(new URL(request.url).pathname);
-		const veet = env.VEET.get(id);
-		return veet.fetch(request);
+		const id = env.INTELLIMEET.idFromName(new URL(request.url).pathname);
+		const intellimeet = env.INTELLIMEET.get(id);
+		return intellimeet.fetch(request);
 	},
 };

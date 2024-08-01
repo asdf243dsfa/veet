@@ -1,5 +1,5 @@
-// VeetAI Internationalization Module
-class VeetI18n {
+// Intellimeet Internationalization Module
+class IntellimeetI18n {
   constructor() {
     this.currentLanguage = 'en';
     this.translations = {};
@@ -180,9 +180,9 @@ class VeetI18n {
 }
 
 // Initialize and expose globally
-window.veetI18n = new VeetI18n();
+window.intellimeetI18n = new IntellimeetI18n();
 
 // Export for modules if needed
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = VeetI18n;
+  module.exports = IntellimeetI18n;
 }

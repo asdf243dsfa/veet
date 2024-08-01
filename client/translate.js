@@ -61,7 +61,7 @@ async function translateText(text, targetLanguage, apiKey) {
         {
           role: 'system',
           content: `You are a professional translator. Translate the given text to ${targetLanguage}. 
-                   Keep technical terms like "VeetAI" unchanged. Maintain the same tone and style.
+                   Keep technical terms like "Intellimeet" unchanged. Maintain the same tone and style.
                    Return only the translation, no explanations.`
         },
         {
