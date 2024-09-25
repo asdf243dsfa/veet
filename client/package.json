@@ -6,7 +6,8 @@
 		"deploy": "wrangler pages deploy",
 		"dev": "wrangler pages dev",
 		"start": "wrangler pages dev",
-		"test": "vitest"
+		"test": "vitest",
+		"translate": "node translate.js"
 	},
 	"devDependencies": {
 		"@cloudflare/vitest-pool-workers": "^0.1.0",
