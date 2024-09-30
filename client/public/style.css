@@ -3,6 +3,45 @@ body {
 	padding: 20px;
 	font-family: 'Google Sans', Roboto, Arial, sans-serif;
 }
+
+/* Language Selector Styles */
+.language-selector {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 1000;
+}
+
+.language-selector select {
+	padding: 8px 12px;
+	border: 1px solid #dadce0;
+	border-radius: 4px;
+	background: white;
+	font-size: 14px;
+	cursor: pointer;
+	outline: none;
+	transition: border-color 0.2s;
+}
+
+.language-selector select:hover {
+	border-color: #1a73e8;
+}
+
+.language-selector select:focus {
+	border-color: #1a73e8;
+	box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+/* RTL Support for Arabic */
+[lang="ar"] {
+	direction: rtl;
+	text-align: right;
+}
+
+[lang="ar"] .language-selector {
+	left: 20px;
+	right: auto;
+}
 .logo {
 	display: flex;
 	color: #5f6368;

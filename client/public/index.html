@@ -7,19 +7,36 @@
 		<link href="style.css" rel="stylesheet" />
 	</head>
 	<body>
-		<div class="logo"><img src="images/veet.png" /> <span>Veet</span></div>
-		<h1>Free video calls for everyone</h1>
-		<p>From anywhere, connect, collaborate, and celebrate with Veet</p>
+		<!-- Language Selector -->
+		<div class="language-selector">
+			<select data-language-selector>
+				<option value="en">🇺🇸 English</option>
+				<option value="es">🇪🇸 Español</option>
+				<option value="fr">🇫🇷 Français</option>
+				<option value="de">🇩🇪 Deutsch</option>
+				<option value="it">🇮🇹 Italiano</option>
+				<option value="pt">🇵🇹 Português</option>
+				<option value="ja">🇯🇵 日本語</option>
+				<option value="ko">🇰🇷 한국어</option>
+				<option value="zh">🇨🇳 中文</option>
+				<option value="ar">🇸🇦 العربية</option>
+				<option value="hi">🇮🇳 हिन्दी</option>
+			</select>
+		</div>
+
+		<div class="logo"><img src="images/veet.png" /> <span data-i18n="logo_text">VeetAI</span></div>
+		<h1 data-i18n="main_heading">Free AI-powered multilingual video calls for everyone</h1>
+		<p data-i18n="description">From anywhere, connect, collaborate, and celebrate with VeetAI - now with instant AI translation</p>
 		<div id="lobby">
 			<form id="new">
 				<button>
 					<img src="images/video_add.svg" />
-					<span>New Meeting</span>
+					<span data-i18n="new_meeting_button">New Meeting</span>
 				</button>
 			</form>
 			<form id="join">
-				<input type="url" name="url" placeholder="Meeting Link" value="" />
-				<button>Join</button>
+				<input type="url" name="url" data-i18n="meeting_link_placeholder" placeholder="Meeting Link" value="" />
+				<button data-i18n="join_button">Join</button>
 			</form>
 		</div>
 	</body>
@@ -45,4 +62,5 @@
 			startCall(id);
 		});
 	</script>
+	<script src="js/i18n.js"></script>
 </html>
