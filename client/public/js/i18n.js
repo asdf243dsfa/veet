@@ -45,7 +45,7 @@ class VeetI18n {
     }
     
     // 2. Check localStorage
-    const savedLang = localStorage.getItem('veet-language');
+    const savedLang = localStorage.getItem('intellimeet-language');
     if (savedLang && this.availableLanguages[savedLang]) {
       return savedLang;
     }
@@ -128,7 +128,7 @@ class VeetI18n {
     this.currentLanguage = newLanguage;
     
     // Save to localStorage
-    localStorage.setItem('veet-language', newLanguage);
+    localStorage.setItem('intellimeet-language', newLanguage);
     
     // Update URL parameter
     const url = new URL(window.location);
