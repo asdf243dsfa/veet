@@ -10,7 +10,7 @@ if (location.hostname == 'localhost') {
 	env.servers = { iceServers: [{ urls: 'stun:stun.cloudflare.com:3478' }] };
 } else {
 	env.ws = 'wss://your-server-url-here.workers.dev';
-	env.servers = await fetch('./turn.json').then((r) => r.json());
+	env.servers = { iceServers: [{ urls: 'stun:stun.cloudflare.com:3478' }] };
 }
 
 let ws;
